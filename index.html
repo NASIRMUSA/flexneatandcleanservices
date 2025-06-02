@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>flexrentz</title>
+    <title>Flex Neat/Clean</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,92 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <style type="text/tailwindcss">
-      @layer utilities {
-        /* Modern animations */
-        .modal-enter {
-          animation: modalEnter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        @keyframes modalEnter {
-          from {
-            opacity: 0;
-            transform: translateY(20px) scale(0.98);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-        }
-        
-        .step-enter {
-          animation: stepEnter 0.3s ease-out forwards;
-        }
-        @keyframes stepEnter {
-          from {
-            opacity: 0;
-            transform: translateX(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        
-        .step-exit {
-          animation: stepExit 0.2s ease-in forwards;
-        }
-        @keyframes stepExit {
-          from {
-            opacity: 1;
-            transform: translateX(0);
-          }
-          to {
-            opacity: 0;
-            transform: translateX(-10px);
-          }
-        }
-        
-        /* Modern card hover effects */
-        .selectable-item {
-          @apply transition-all duration-300 ease-in-out;
-        }
-        .selectable-item:hover {
-          @apply transform scale-[1.01] shadow-lg;
-        }
-        .selectable-item.selected {
-          @apply border-green-500 bg-green-50 shadow-md shadow-green-100/50 ring-1 ring-green-200;
-        }
-        
-        /* Modern overlay */
-        .modal-overlay {
-          @apply backdrop-blur-sm;
-        }
-        
-        /* Modern inputs */
-        .modern-input {
-          @apply transition-all duration-200 border-gray-300 focus:ring-2 focus:ring-green-400 focus:border-transparent;
-        }
-        
-        /* Modern buttons */
-        .modern-btn {
-          @apply transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98];
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 640px) {
-          .modal-content {
-            @apply max-h-[95vh] rounded-none;
-          }
-        }
-      }
-    </style>
+      <link rel="stylesheet" href="style/style.css">
+
   </head>
   <body>
 <nav class="w-full px-4 sm:px-6 lg:px-8 mx-auto h-20 flex items-center justify-between relative z-50">
   <!-- Logo -->
   <div class="flex items-center">
     <a href="index.html">
-      <img src="images/flexrentz.png" alt="Flexrentz Logo" class="h-10" />
+      <img src="images/Asset1.png" alt="Flexrentz Logo" height="auto" width="180px"/>
     </a>
   </div>
 
@@ -118,7 +41,7 @@
   <!-- Desktop Nav Links -->
   <div class="hidden md:flex items-center space-x-8" id="nav-links">
     <ul class="flex items-center space-x-8">
-      <li><a href="index.html" class="text-gray-800 hover:text-green-800 transition">Home</a></li>
+      <li><a href="index.html" class="text-green-800 hover:text-green-800 transition">Home</a></li>
       <li class="relative group">
         <a href="about.html" class="text-gray-800 hover:text-green-800 transition flex items-center">
           About Us
@@ -206,7 +129,7 @@
       Cleaning Services In <span class="text-green-600">Jalingo</span>
     </h1>
     <p class="text-base md:text-lg text-gray-600">
-      Flexrentz Neat and Clean is Jalingo's trusted name for professional, stress-free cleaning services. With a dedicated team, modern tools, and a strong focus on detail, they handle everything from deep cleaning to routine maintenance — always with care and precision.
+      flex neat and clean is Jalingo's trusted name for professional, stress-free cleaning services. With a dedicated team, modern tools, and a strong focus on detail, they handle everything from deep cleaning to routine maintenance — always with care and precision.
     </p>
     <p class="text-base md:text-lg text-gray-600 mb-8">
       What makes them the best isn't just how well they clean, but how much they care. They value your time, your space, and your peace of mind, delivering spotless results that make life easier and more comfortable.
@@ -219,11 +142,11 @@
 
   <!-- Image Section -->
   <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
-    <div class="relative w-full h-full min-h-[700px]">
+    <div class="relative w-full h-full max-h-[700px]">
       <img src="images/cleaner1.jpg" alt="Professional cleaner" 
            class="w-full h-full object-cover  relative z-10 max-h-[700px]" />
       <img src="images/team4.jpg" alt="Cleaning team" 
-           class="hidden md:block absolute -bottom-6 -left-6 z-20 h-[400px] w-[450px]    " style="border-radius: 10px;" />
+           class="hidden md:block absolute -bottom-6 -left-6 z-20 " style="border-radius: 10px; width: 80%;" />
     </div>
   </div>
 </section>
@@ -283,7 +206,7 @@
           </span>
         </div>
         <p class="text-gray-600 mb-6">
-          Whenever you work with Flexrentz Neat/Clean, you can trust that
+          Whenever you work with Flex Neat/Clean, you can trust that
           you're in great hands.
         </p>
       </div>
@@ -307,7 +230,7 @@
         Your Space Stays Spotless
       </h1>
       <p class="text-lg text-gray-600 mb-10">
-        With Flexrentz Neat and Clean, your space stays spotless without the
+        With Flex Neat and Clean, your space stays spotless without the
         hassle. Our team works with precision and care to ensure every
         surface shines — from floors to ceilings, and everything in between.
       </p>
@@ -375,7 +298,7 @@
       <div class="text-green-500 text-2xl text-center mt-2">“</div>
       <p class="text-gray-600 mt-4 text-center leading-relaxed">
         As a small business owner, keeping our office space clean is a top
-        priority. Flexrentz Neat and Clean has been our go-to service for
+        priority. Flex Neat and Clean has been our go-to service for
         over a year now, and they've never disappointed. Their staff is
         consistent, trustworthy, and always thorough.
       </p>
@@ -395,7 +318,7 @@
       </h3>
       <div class="text-green-500 text-2xl text-center mt-2">“</div>
       <p class="text-gray-600 mt-4 text-center leading-relaxed">
-        I hired Flexrentz Neat and Clean for a deep cleaning of my home,
+        I hired Flex Neat and Clean for a deep cleaning of my home,
         and I was blown away by the results. The team arrived right on
         time, fully equipped, and worked with so much attention to detail.
         Every corner was spotless — even areas I hadn't noticed were dirty!
@@ -416,7 +339,7 @@
       </h3>
       <div class="text-green-500 text-2xl text-center mt-2">“</div>
       <p class="text-gray-600 mt-4 text-center leading-relaxed">
-        I needed emergency cleaning and Flexrentz Neat and Clean came
+        I needed emergency cleaning and Flex Neat and Clean came
         through at the last minute. They were professional, fast, and
         incredibly efficient. The entire house looked refreshed and ready
         to welcome guests. It felt like working with people who truly care.
@@ -430,10 +353,10 @@
       <!-- About Section -->
       <div>
         <div class="flex items-center mb-5">
-          <img src="images/flexrentz.png" alt="Flexrentz Logo" class="h-10">
+         <img src="images/Asset5.png" alt="Flexrentz Logo" height="auto" width="180px"/>
         </div>
         <p class="text-white/90 text-sm leading-relaxed">
-          Flexrentz Neat and Clean is Jalingo's trusted name for professional, 
+          Flex Neat and Clean is Jalingo's trusted name for professional, 
           stress-free cleaning services. With a dedicated team, modern tools, 
           and a strong focus on detail.
         </p>
@@ -503,7 +426,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="text-white/90 hover:text-white hover:underline text-sm flex items-center transition">
+            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=ygahd5r" class="text-white/90 hover:text-white hover:underline text-sm flex items-center transition">
               <i class="bi bi-instagram mr-2"></i> Instagram
             </a>
           </li>
@@ -518,7 +441,7 @@
 
     <div class="border-t border-white/20 pt-8">
       <p class="text-white/80 text-center text-sm">
-        Copyright © 2025 Flexrentz. All rights reserved.
+        Copyright © 2025 Flex Neat/Clean. All rights reserved.
       </p>
     </div>
   </div>
