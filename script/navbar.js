@@ -10,9 +10,5 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("hidden");
   });
 
-  // Toggle mobile dropdown
-  mobileDropdownToggle.addEventListener("click", function (e) {
-    e.preventDefault(); // Prevent link redirect
-    mobileDropdown.classList.toggle("hidden");
-  });
+
 });
