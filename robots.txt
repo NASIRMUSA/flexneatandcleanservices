@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flexneatandclean.com.ng/sitemap.xml
