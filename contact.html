@@ -142,7 +142,7 @@
 
             <div class="contact-details">
               <p class="font-semibold text-gray-800">Email Address</p>
-              <p class="text-gray-600">flexneat&clean@officialmail.com</p>
+              <p class="text-gray-600">flexrentzz@gmail.com</p>
             </div>
           </div>
 
@@ -348,8 +348,10 @@
 
 
          <!-- Modal Overlay -->
+
+    <!-- Modal Overlay -->
     <div
-      class="modal-overlay fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 hidden"
+      class="modal-overlay fixed inset-0 bg-black/50 flex items-center justify-center p-4 sm:p-0 z-50 hidden"
       id="bookingModalOverlay">
       <!-- Modal Content -->
       <div
@@ -363,9 +365,27 @@
 
         <!-- Step 1: Location -->
         <div class="modal-step p-6 hidden" id="location">
-          <h2 class="text-2xl font-bold text-gray-800 mb-4">Select Location</h2>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">North-East</h2>
+              <p class="text-gray-500 text-sm">Currently serving this area</p>
           <hr class="border-gray-200 my-4" />
-          <div class="space-y-3">
+          <div class="space-y-3 mt-4">
+            <div
+              class="selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md selected"
+              onclick="selectLocation('Adamawa state', 'selectService')">
+              <div class="flex items-center">
+                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg text-green-600">Adamawa state</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="space-y-3 mt-4">
             <div
               class="selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md selected"
               onclick="selectLocation('Taraba State', 'selectService')">
@@ -377,8 +397,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-lg text-green-600">Taraba State</h3>
-                  <p class="text-gray-500 text-sm">Currently serving this area</p>
+                  <h3 class="font-semibold text-lg text-green-600">Taraba state</h3>
                 </div>
               </div>
             </div>
@@ -468,7 +487,7 @@
             <div
               class="service-option-card selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md"
               data-service-name="1 Bedroom Flat"
-              data-price="9136.43"
+              data-price="7100"
               onclick="selectSpecificService(this, 'onetime')">
               <div class="flex items-start">
                 <div class="bg-green-100 p-2 rounded-lg mr-3">
@@ -481,14 +500,16 @@
                   <p class="text-gray-600 text-sm mb-2">
                     Service duration up to 1hr 30mins
                   </p>
-                  <p class="price font-bold text-green-600">₦9,136.43</p>
+                  <p class="price font-bold text-green-600">₦7,100
+
+                  </p>
                 </div>
               </div>
             </div>
             <div
               class="service-option-card selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md"
               data-service-name="2 Bedroom Flat"
-              data-price="11286.43"
+              data-price="10286.43"
               onclick="selectSpecificService(this, 'onetime')">
               <div class="flex items-start">
                 <div class="bg-green-100 p-2 rounded-lg mr-3">
@@ -501,14 +522,14 @@
                   <p class="text-gray-600 text-sm mb-2">
                     Service duration up to 2hrs 30mins
                   </p>
-                  <p class="price font-bold text-green-600">₦11,286.43</p>
+                  <p class="price font-bold text-green-600">₦10,286.43</p>
                 </div>
               </div>
             </div>
             <div
               class="service-option-card selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md"
               data-service-name="3 Bedroom Flat"
-              data-price="16661.43"
+              data-price="15550"
               onclick="selectSpecificService(this, 'onetime')">
               <div class="flex items-start">
                 <div class="bg-green-100 p-2 rounded-lg mr-3">
@@ -521,7 +542,7 @@
                   <p class="text-gray-600 text-sm mb-2">
                     Service duration up to 3hr 30mins
                   </p>
-                  <p class="price font-bold text-green-600">₦16,661.43</p>
+                  <p class="price font-bold text-green-600">₦15,550</p>
                 </div>
               </div>
             </div>
@@ -934,7 +955,7 @@
                 type="date"
                 id="booking-date"
                 name="booking-date"
-                class="w-full p-3 border border-gray-300 rounded-lg modern-input text-green-500" />
+                class="w-full p-3 border border-gray-300 rounded-lg modern-input text-green-600" />
             </div>
             <div class="mb-4">
               <label
@@ -946,7 +967,7 @@
                 type="time"
                 id="booking-time"
                 name="booking-time"
-                class="w-full p-3 border border-gray-300 rounded-lg modern-input text-green-500" />
+                class="w-full p-3 border border-gray-300 rounded-lg modern-input text-green-600" />
             </div>
           </div>
           <button
@@ -1080,14 +1101,14 @@
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span
-                class="badge bg-gray-200 px-3 py-1 rounded-full text-sm inline-flex items-center gap-1">
+                class="badge bg-green-600 text-white px-3 py-1 rounded-full text-sm inline-flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 <span id="verify-date">Date</span>
               </span>
               <span
-                class="badge bg-gray-200 px-3 py-1 rounded-full text-sm inline-flex items-center gap-1">
+                class="badge bg-green-600 text-white px-3 py-1 rounded-full text-sm inline-flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -1156,7 +1177,6 @@
       </div>
       <!-- /modal-content -->
     </div>
-    <!-- /modal-overlay -->
 
     <script>
       // You'll need to update your JavaScript to handle the new animations

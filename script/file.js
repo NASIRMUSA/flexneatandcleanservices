@@ -74,7 +74,7 @@ function handleSelection(element, nextStepId) {
 function selectLocation(locationName, nextStepId) {
     const element = event.currentTarget; // Get the div that was clicked
     bookingData.location = locationName;
-    console.log("Location selected:", bookingData.location);
+    // console.log("Location selected:", bookingData.location);
     handleSelection(element, nextStepId);
 }
 
@@ -85,7 +85,7 @@ function selectServiceType(serviceTypeName, price, nextStepId) {
     bookingData.specificService = null;
     bookingData.price = price; // Base price if applicable, specific service overrides later
     bookingData.previousStepForFrequency = nextStepId; // Store where 'back' from frequency should go
-    console.log("Service Type selected:", bookingData.serviceType);
+    // console.log("Service Type selected:", bookingData.serviceType);
     handleSelection(element, nextStepId);
 }
 
@@ -93,14 +93,14 @@ function selectSpecificService(element, nextStepId) {
     // element is the div clicked (passed via 'this')
     bookingData.specificService = element.dataset.serviceName;
     bookingData.price = parseFloat(element.dataset.price) || 0; // Get price from data attribute
-    console.log("Specific Service selected:", bookingData.specificService, "Price:", bookingData.price);
+    // console.log("Specific Service selected:", bookingData.specificService, "Price:", bookingData.price);
     handleSelection(element, nextStepId);
 }
 
 function selectFrequency(frequencyName, nextStepId) {
     const element = event.currentTarget; // Get the div that was clicked
     bookingData.frequency = frequencyName;
-    console.log("Frequency selected:", bookingData.frequency);
+    // console.log("Frequency selected:", bookingData.frequency);
     handleSelection(element, nextStepId);
 }
 
@@ -115,7 +115,7 @@ function selectDateTime(nextStepId) {
 
     bookingData.date = dateInput.value;
     bookingData.time = timeInput.value;
-    console.log("Date/Time selected:", bookingData.date, bookingData.time);
+    // console.log("Date/Time selected:", bookingData.date, bookingData.time);
     showStep(nextStepId);
 }
 
@@ -150,7 +150,7 @@ function createAccountAndProceed(nextStepId) {
     // bookingData.userPassword = passwordInput.value; // Again, be careful storing passwords
     bookingData.userAddress = addressInput.value;
 
-    console.log("Account Data captured:", bookingData.userName, bookingData.userEmail, bookingData.userPhone);
+    // console.log("Account Data captured:", bookingData.userName, bookingData.userEmail, bookingData.userPhone);
 
     // Populate the verification step
     populateVerificationDetails();
@@ -175,7 +175,7 @@ function populateVerificationDetails() {
 
 // --- Final Action: Send to WhatsApp ---
 function proceedToPayment() {
-    const whatsappNumber = "+2348100353337"; // Make sure the number is correct
+    const whatsappNumber = "+2349034898368"; // Make sure the number is correct
 
     // Ensure all necessary data is present
     if (!bookingData.serviceType || !bookingData.userName || !bookingData.userPhone || !bookingData.date || !bookingData.time) {
@@ -206,8 +206,8 @@ function proceedToPayment() {
     // Create the WhatsApp link
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-    console.log("Generated WhatsApp URL:", whatsappUrl);
-    console.log("Message Content:\n", message); // Log the raw message for debugging
+    // console.log("Generated WhatsApp URL:", whatsappUrl);
+    // console.log("Message Content:\n", message); // Log the raw message for debugging
 
     // Redirect the user to WhatsApp
     window.open(whatsappUrl, '_blank'); // Open in new tab is safer

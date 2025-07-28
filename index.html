@@ -180,7 +180,7 @@
     <div class="relative w-full h-full max-h-[700px]">
       <img src="images/cleaner1.jpg" alt="Professional cleaner" 
            class="w-full h-full object-cover  relative z-10 max-h-[700px]" />
-      <img src="images/cleaner2.jpg" alt="Cleaning team" 
+      <img src="images/flext-image/2.JPG" alt="Cleaning team" 
            class="hidden md:block absolute -bottom-6 -left-6 z-20 w-[400px]" style="border-radius: 20px;" />
     </div>
   </div>
@@ -254,7 +254,7 @@
   <div class=" mx-auto flex flex-col lg:flex-row items-center gap-12 xl:gap-16">
     <!-- Image Section -->
     <div class="w-full lg:w-1/2">
-      <img src="images/space.jpg" alt="Cleaning Professional" 
+      <img src="images/flext-image/4.JPG" alt="Cleaning Professional" 
            class="w-full rounded-xl object-cover h-auto lg:h-[650px]"
            style="object-position: center;">
     </div>
@@ -505,9 +505,27 @@
 
         <!-- Step 1: Location -->
         <div class="modal-step p-6 hidden" id="location">
-          <h2 class="text-2xl font-bold text-gray-800 mb-4">Select Location</h2>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">North-East</h2>
+              <p class="text-gray-500 text-sm">Currently serving this area</p>
           <hr class="border-gray-200 my-4" />
-          <div class="space-y-3">
+          <div class="space-y-3 mt-4">
+            <div
+              class="selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md selected"
+              onclick="selectLocation('Adamawa state', 'selectService')">
+              <div class="flex items-center">
+                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg text-green-600">Adamawa state</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="space-y-3 mt-4">
             <div
               class="selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md selected"
               onclick="selectLocation('Taraba State', 'selectService')">
@@ -519,8 +537,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-lg text-green-600">Taraba State</h3>
-                  <p class="text-gray-500 text-sm">Currently serving this area</p>
+                  <h3 class="font-semibold text-lg text-green-600">Taraba state</h3>
                 </div>
               </div>
             </div>
@@ -610,7 +627,7 @@
             <div
               class="service-option-card selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md"
               data-service-name="1 Bedroom Flat"
-              data-price="9136.43"
+              data-price="7100"
               onclick="selectSpecificService(this, 'onetime')">
               <div class="flex items-start">
                 <div class="bg-green-100 p-2 rounded-lg mr-3">
@@ -623,14 +640,16 @@
                   <p class="text-gray-600 text-sm mb-2">
                     Service duration up to 1hr 30mins
                   </p>
-                  <p class="price font-bold text-green-600">₦9,136.43</p>
+                  <p class="price font-bold text-green-600">₦7,100
+
+                  </p>
                 </div>
               </div>
             </div>
             <div
               class="service-option-card selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md"
               data-service-name="2 Bedroom Flat"
-              data-price="11286.43"
+              data-price="10286.43"
               onclick="selectSpecificService(this, 'onetime')">
               <div class="flex items-start">
                 <div class="bg-green-100 p-2 rounded-lg mr-3">
@@ -643,14 +662,14 @@
                   <p class="text-gray-600 text-sm mb-2">
                     Service duration up to 2hrs 30mins
                   </p>
-                  <p class="price font-bold text-green-600">₦11,286.43</p>
+                  <p class="price font-bold text-green-600">₦10,286.43</p>
                 </div>
               </div>
             </div>
             <div
               class="service-option-card selectable-item border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-green-300 hover:shadow-md"
               data-service-name="3 Bedroom Flat"
-              data-price="16661.43"
+              data-price="15550"
               onclick="selectSpecificService(this, 'onetime')">
               <div class="flex items-start">
                 <div class="bg-green-100 p-2 rounded-lg mr-3">
@@ -663,7 +682,7 @@
                   <p class="text-gray-600 text-sm mb-2">
                     Service duration up to 3hr 30mins
                   </p>
-                  <p class="price font-bold text-green-600">₦16,661.43</p>
+                  <p class="price font-bold text-green-600">₦15,550</p>
                 </div>
               </div>
             </div>

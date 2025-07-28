@@ -5,9 +5,9 @@
                 services: {
                     'Lite Regular Cleaning': {
                         options: [
-                            { name: '1 Bedroom Flat', price: 9136.43, description: 'Lite Regular cleaning. Duration up to 1hr 30mins.' },
-                            { name: '2 Bedroom Flat', price: 11286.43, description: 'Lite Regular cleaning. Duration up to 2hrs 30mins.' },
-                            { name: '3 Bedroom Flat', price: 16661.43, description: 'Lite Regular cleaning. Duration up to 3hrs 30mins.' },
+                            { name: '1 Bedroom Flat', price: 7100, description: 'Lite Regular cleaning. Duration up to 1hr 30mins.' },
+                            { name: '2 Bedroom Flat', price: 10286.43, description: 'Lite Regular cleaning. Duration up to 2hrs 30mins.' },
+                            { name: '3 Bedroom Flat', price: 15550, description: 'Lite Regular cleaning. Duration up to 3hrs 30mins.' },
                             { name: '3 Bedroom Duplex', price: 17736.43, description: 'Lite Regular cleaning. Duration up to 3hrs 30mins.' }
                         ]
                     },
@@ -81,7 +81,7 @@
                         ${renderCloseButton()}
                         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Select Location</h2>
                         <hr class="border-gray-200 mb-6">
-                        <div data-location="Taraba State" class="location-option border-2 border-green-500 rounded-full py-3 px-6 text-gray-800 font-medium cursor-pointer hover:bg-gray-50 transition">Taraba State</div>
+                        <div data-location="Taraba" class="location-option border-2 border-green-500 rounded-full py-3 px-6 text-gray-800 font-medium cursor-pointer hover:bg-gray-50 transition">Taraba </div>
                     </div>
 
                     <!-- Service Selector -->
